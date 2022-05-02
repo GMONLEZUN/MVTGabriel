@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia</title>
+</head>
+<body>
+    
+    <h1>Mi Familia</h1> <br>
+
+    <section>
+        {% for familiar in familia %}
+            
+            <h3><b style="color: darkslateblue;">Nombre:</b> {{familiar.0}} <b style="color: darkslateblue; margin-left: 30px;">Apellido: </b> {{familiar.1}}</h3>
+             <p><b style="color: darkslateblue;">Edad:</b> {{familiar.2}} <b style="color: darkslateblue; margin-left: 55px">Fecha de Nacimiento: </b> {{familiar.3}}</p>
+            <br>
+            <hr>
+
+        {% endfor %}
+    </section>
+
+    <br><br><br><br><br>
+    <footer style="background-color: lightgreen; color: black;">
+         {{documento}}
+    </footer>
+</body>
+</html>
